@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/eduke32-AppImage)](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://voidpoint.io/uploads/-/system/project/avatar/1/EDuke32_logo_21_large_blue.png" width="128" />
 </p>
 
 
