@@ -32,7 +32,7 @@ if ! wget --retry-connrefused --tries=30 "$REPO" -O /tmp/app.tar.xz 2>/tmp/downl
 fi
 
 #tar -xvf ./eduke32_src_20251111-10652-39967d866.tar.xz
-tar -xvf /tmp/app .
+tar -xvf /tmp/app.tar.xz
 #rm -f ./*.xz
 cd eduke32_20251111-10652-39967d866
 make PACKAGE_REPOSITORY=1 VC_REV=10652-39967d866 -j $(nproc)
