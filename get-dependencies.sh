@@ -26,9 +26,10 @@ make-aur-package sdl2
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
 REPO="http://dukeworld.com/eduke32/synthesis/20251111-10652-39967d866/eduke32_src_20251111-10652-39967d866.tar.xz"
-wget --retry-connrefused --tries=30 "$REPO" -O /tmp/app.tar.xz 2>/tmp/download.log; then
+if ! wget --retry-connrefused --tries=30 "$REPO" -O /tmp/app.tar.xz 2>/tmp/download.log; then
 	cat /tmp/download.log
 	exit 1
+fi
 
 #tar -xvf ./eduke32_src_20251111-10652-39967d866.tar.xz
 tar -xvf /tmp/app .
