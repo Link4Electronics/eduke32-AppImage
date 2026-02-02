@@ -28,13 +28,14 @@ make-aur-package sdl2
 
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
-REPO="http://dukeworld.com/eduke32/synthesis/20251111-10652-39967d866/eduke32_src_20251111-10652-39967d866.tar.xz"
+BVER="20251111-10652-39967d866"
+REPO="http://dukeworld.com/eduke32/synthesis/20251111-10652-39967d866/eduke32_src_$BVER.tar.xz"
 wget "$REPO"
-echo "20251111_10652-39967d866" > ~/version
+echo $BVER > ~/version
 
-tar -xvf ./eduke32_src_20251111-10652-39967d866.tar.xz
+tar -xvf ./eduke32_src_$BVER.tar.xz
 rm -f ./*.xz
-cd eduke32_20251111-10652-39967d866
+cd eduke32_$BVER
 make PACKAGE_REPOSITORY=1 VC_REV=10652-39967d866 -j $(nproc)
 
 # install binaries, buildlicense, icon and desktop files
