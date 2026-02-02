@@ -40,4 +40,4 @@ install -d /usr/bin
 install -m755 eduke32 mapster32 /usr/bin
 install -Dm644 package/common/buildlic.txt /usr/share/licenses/eduke32/buildlic.txt
 install -Dm644 source/duke3d/rsrc/game_icon.ico /usr/share/pixmaps/eduke32.ico
-install -Dm644 ../eduke32.desktop /usr/share/applications/eduke32.desktop
+#install -Dm644 ../eduke32.desktop /usr/share/applications/eduke32.desktop
