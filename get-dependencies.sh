@@ -29,7 +29,7 @@ make-aur-package sdl2
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
 BVER="20251111-10652-39967d866"
-REPO="http://dukeworld.com/eduke32/synthesis/20251111-10652-39967d866/eduke32_src_$BVER.tar.xz"
+REPO="http://dukeworld.com/eduke32/synthesis/$BVER/eduke32_src_$BVER.tar.xz"
 wget "$REPO"
 echo $BVER > ~/version
 
